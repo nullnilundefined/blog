@@ -1,4 +1,0 @@
-Sitemap: https://dontaskmewhoami.life/sitemapindex.xml
-
-User-Agent: *
-Host: dontaskmewhoami.life
