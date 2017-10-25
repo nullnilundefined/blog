@@ -5,9 +5,10 @@ serve:
 	@nikola serve --browser
 
 release:
-	@checkout -b build
+	@git checkout -b build
+	@make build
 	@git add -f output
-	@git commit -b "build ($$(date))"
+	@git commit -m "build ($$(date))"
 	@git subtree push --prefix output origin gh-pages
 	@git checkout master
 	@git branch -D build
