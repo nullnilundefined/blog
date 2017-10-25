@@ -9,6 +9,6 @@ release:
 	@make build
 	@git add -f output
 	@git commit -m "build ($$(date))"
-	@git subtree push --prefix output origin gh-pages
+	@git push origin `git subtree split --prefix output master`:gh-pages --force
 	@git checkout master
 	@git branch -D build
