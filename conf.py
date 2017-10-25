@@ -141,7 +141,7 @@ NAVIGATION_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "blogtxt"
+THEME = "hemingway"
 
 # Primary color of your theme. This will be used to customize your theme and
 # auto-generate related colors in POSTS_SECTION_COLORS. Must be a HEX value.
@@ -1406,4 +1406,11 @@ LATEX_FORMULA_ADDITIONAL_PREAMBLE = {
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}"""
+}
+
+INDEX_READ_MORE_LINK = '<a class="button is-link" href="{link}" style="height:28px"> {read_more} <span class="icon is-small"> <iclass="fa fa-angle-double-right"></i></span></a>'
+NAVIGATION_LINKS = {
+    DEFAULT_LANG: (
+        ("/rss.xml", "fa fa-rss"),
+    ),
 }
